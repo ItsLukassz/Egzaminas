@@ -28,9 +28,11 @@ async function getMovie(){
     if( data.Response == "False" ) {
         // jei api grazina false, pranesame vartotoja
         title.innerHTML = `<p>ERROR! Cant find a movie with that name!</p>`;
+        console.log("Error occured");
     }
     // jei surado perkeliam informacija i html
     else {
+        console.log("Success!")
         title.innerHTML = `<p> Title: ${data.Title}</p>`;
         Rating.innerHTML = `<p>  IMDB Rating: ${data.imdbRating} </p>`;
         Duration.innerHTML = `<p> Movie Runtime: ${data.Runtime} </p>`;
