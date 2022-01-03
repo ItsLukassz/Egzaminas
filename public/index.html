@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <title>IMDB API</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">IMDB Search Engine</a>
+                <input id="tekstas" class="form-control mr-sm-2" type="text" placeholder="Enter Movie Title" aria-label="Search">
+                <button id="button" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+            </nav>
+            <p id="Temporary">Enter movie name above and click search</p>
+            <div class="row">
+                <div id="Poster" class="col-sm-3">
+                    <p></p>
+                </div>
+                <div class="MovieResults col-sm-4">
+                    <p id="Title"></p>
+                    <p id="Duration"></p>
+                    <p id="Director"></p>
+                    <p id="Actors"></p>
+                    <p id="Rating"></p>
+                </div>
+            </div>
+            <footer>© Copyright 2021</footer>
+        </main>
+    </div>
+</body>
+</html>
